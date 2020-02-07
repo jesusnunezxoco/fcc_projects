@@ -1,0 +1,102 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ justify-content: center;
+ align-items: center;
+ font-family: "Roboto", sans-serif;
+ line-height: 1.6;
+ font-size: 25px;
+}
+article {
+ height: 100vh;
+}
+
+#navbar {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ position: fixed;
+}
+
+@media screen and (max-width: 500px) {
+ #navbar ul {
+  flex-direction: column;
+  height: 5vh;
+  position: inline;
+ }
+}
+
+#navbar ul {
+ background: red;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ margin: 0px auto;
+ height: 5vh;
+ width: 100vw;
+ bullet-decoration: none;
+ list-style-type: none;
+}
+
+#welcome-section {
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
+ justify-content: space-between;
+ text-align: center;
+}
+#welcome-section h1 {
+ padding-top: 30vh;
+}
+.about-description p {
+ float: right;
+}
+
+.home-know {
+ min-height: 15vh;
+ background: orange;
+}
+
+.home-know p {
+  padding-top: 4%;
+}
+
+footer {
+ background: red;
+}
+
+h2 {
+ background: green;
+}
+
+article:nth-of-type(1n) {
+ background: yellow;
+}
+
+article:nth-of-type(2n) {
+ background: purple;
+}
+
+#projects {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ text-align: center;
+}
+
+.project-tile {
+ height: 200px;
+ width: 200px;
+ border: 2px solid pink;
+ 
+}
+
+.strength {
+ display: none;
+}
+
+

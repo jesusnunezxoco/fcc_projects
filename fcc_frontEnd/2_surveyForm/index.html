@@ -1,0 +1,208 @@
+<html>
+<head>
+  <title>ESL Student Interest Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <main>
+      <header>
+        <h1 id="title">ESL Student Interest Form</h1>
+        <p id="description">Please complete the information below if you are intrested in English classes. Our staff will be in contact with you as soon as possible once submitted.</p>
+      </header>
+      <form id="survey-form">
+        <fieldset>
+          <legend><h2>Perosnal Information</h2></legend>
+         
+          <label for="name">First Name: </label>
+          <input type="text" name="name" id="name" placeholder="John" required>
+
+          <label for="name-middle">Middle Name: </label>
+          <input type="text" name="name" id="name-middle" placeholder="Robert">
+
+          <label for="name-last">Last Name: </label>
+          <input type="text" name="name" id="name-last" placeholder="Doe" required>
+         
+          <label for="name" id="name-label">Preferred Name: </label>
+          <input type="text" name="name" id="name" placeholder="Joe" required>
+
+          <label for="name">Street Address: </label>
+          <input type="text" name="address" id="address-street" placeholder="5604 Manor Road" required>
+
+          <label for="name">City: </label>
+          <input type="text" name="address" id="address-city" placeholder="Austin" required>
+
+          <label for="address-state">State: </label>
+          <input type="text" name="address" id="address-state" placeholder="TX" maxlength="2" required>
+          
+          <label for="address-zipcode">Zip Code: </label>
+          <input type="text" name="address" id="address-zipcode" placeholder="78723" maxlength="5">
+          
+          <label for="date-birth">Date of Birth: </label>
+          <input type="date" name="date-birth" id="date-birth">
+          
+          <label for="name" id="email-label">E-Mail: </label>
+          <input type="email" name="contact" id="email" placeholder="blank@email.com" required>
+          
+          <label for="phone">Phone Number: </label>
+          <input type="tel" name="contact" id="phone" placeholder="512-555-555">
+        </fieldset>
+
+        <fieldset>
+          <legend><h2>Demographic Information</h2></legend>
+          <label for="gender" name="radio-buttons">Gender: </label>
+          <ul id="gender">
+            <li><label for="gender-male" name="radio-buttons"><input type="radio" name="gender" id="gender-male" value="male">Male</label></li>
+            <li><label for="gender-female" name="radio-buttons"><input type="radio" name="gender" id="gender-female" value="female">Female</label></li>
+            <li><label for="gender-trans" name="radio-buttons"><input type="radio" name="gender" id="gender-female" value="trans">Trans</label></li>
+            <li><label for="gender-nonbinary" name="radio-buttons"><input type="radio" name="gender" id="gender-nonbinary" value="nonbinary">Non-Binary</label></li>
+            <li><label for="gender-custom"><input type="radio" name="gender" id="gender-custom" value="">Custom<input type="text" name="gender" value=""</label></li>
+          </ul>
+          <label for="ethnicity">Ethnicity: </label>
+          <ul id="ethnicity">
+            <li><label for="ethnicity-hispanic"><input type="radio" name="ethnicity" id="ethnicity-hispanic" value="hispanic">Hispanic</label></li>
+            <li><label for="ethnicity-nonhispanic"><input type="radio" name="ethnicity" id="ethnicity-nonhispanic" value="nonhispanic">Non Hispanic</label></li>
+          </ul>
+          <label for="race">Race: (Check all that apply)</label>
+          <ul id="race">
+            <li>
+              <label for="race-white"><input type="checkbox" name="race" id="race-native" value="native">Native American or Indigenous</label>
+                            
+                        
+            </li>
+            <li>
+              <label for="race-asian"><input type="checkbox" name="race" id="race-asian" value="asian">Asian</label></li>
+            <li><label for="race-black"><input type="checkbox" name="race" id="race-black" value="black">Black or African Descent</label></li>
+            <li><label for="race-white"><input type="checkbox" name="race" id="race-white" value="white">White or European descent</label></li>
+            <li><label for="race-pacific"><input type="checkbox" name="race" id="race-pacific" value="pacific">Native Hawaiian/Pacific Islander</label></li>
+            <li><label for="race-nosay"><input type="checkbox" name="race" id="race-nosay" value="nosay">Prefer Not To Say</label></li>
+          
+          <label for="country">Country of Origin: </label>
+          <input type="text" name="country" id="country">
+          <label for="language">Preferred Language </label>
+          <input type="text" name="language" id="language">
+        </fieldset>
+
+        <fieldset>
+          <legend><h2>Work and Education Information</h2></legend>
+          <label for="dropdown">What is your highest level of education?</label>
+          <select id="dropdown">
+                    <option disabled value>Select Education</option>
+                    <option>No Education</option>
+                    <option disabled>Elementary</option>
+                    <option>Kindergarten</option>
+                    <option>1st Grade</option>
+                    <option>2nd Grade</option>
+                    <option>3rd Grade</option>
+                    <option>4th Grade</option>
+                    <option>5th Grade</option>
+                    <option disabled>Middle School</option>
+                    <option>6th Grade</option>
+                    <option>7th Grade</option>
+                    <option>8th Grade</option>
+                    <option disabled>High School</option>
+                    <option>9th Grade</option>
+                    <option>10th Grade</option>
+                    <option>11th Grade</option>
+                    <option>12th Grade</option>
+                    <option disabled>Higher Education</option>
+                    <option>Certificate/Trade</option>
+                    <option>Associate's Degree</option>
+                    <option>Bachelor's Degree</option>
+                    <option>Master's Degree</option>
+                    <option>Doctorate, Ph.D, Professional Degree</option>
+                </select>
+          <label for="work">Do you work?</label>
+          <ul id="work">
+            <label>Yes</label>
+                       <li><input type="radio" name="work" id="work-yes" value="yes"></li>
+                    
+            <label>No<li><input type="radio" name="work" id="work-no" value="no"></li></label>
+          </ul>
+          <label for="work-hours">How many hours do you work?</label>
+          <input type="number" name="work" id="work-hours">
+          <label for="work-rate">What rate do you get paid?</label>
+          <ul id="work-rate">
+            <label>Hourly
+                    <li>
+                        <input type="radio" name="work-rate">
+                    </li>
+                </label>
+            <label>Daily
+                    <li>
+                        <input type="radio" name="work-rate">
+                    </li>
+                </label>
+            <label>Weekly
+                    <li>
+                        <input type="radio" name="work-rate">
+                    </li>
+                </label>
+            <label>Bi-Weekly
+                    <li>
+                        <input type="radio" name="work-rate">
+                    </li>
+                </label>
+            <label>Bi-Monthly
+                    <li>
+                        <input type="radio" name="work-rate">
+                    </li>
+                </label>
+            <label>Anually
+                    <li>
+                        <input type="radio" name="work-rate">
+                    </li>
+                </label>
+            <label>Contract
+                    <li>
+                        <input type="radio" name="work-rate">
+                    </li>
+                </label>
+          </ul>
+
+          <label>How much do you get paid</label>
+          <input type="number" name="" maxlength:"10" id="number">
+          <label>How many people are in your household? (include yourself and people you claim as dependents or claim you as dependents, not roommates!)</label>
+          <input type="number" name="" maxlength:"2">
+          <label>How much is your gross monthly househole income?</label>
+          <input type="number" name="" placeholder="$3,000 / mo" maxlength:"10">
+        </fieldset>
+        <fieldset>
+          <legend><h2>Interests & Availability</h2></legend>
+          <header><h3>What days are you available?</h3></header>
+          <ul id="available-days">
+            <li><label><input type="checkbox" name="available-days" value="Monday" id="avaiable-Mon">Monday</label></li>
+            <li><label><input type="checkbox" name="available-days" value="Tuesday" id="avaiable-Tue">Tuesday</label></li>
+            <li><label><input type="checkbox" name="available-days" value="Wednesday" id="avaiable-Wed">Wednesday</label></li>
+            <li><label><input type="checkbox" name="available-days" value="Thursday" id="avaiable-Thu">Thursday </label></li>
+            <li<label><input type="checkbox" name="available-days" value="Friday" id="avaiable-Fri"> Friday </label></li>
+          </ul>
+        <header for="available-times"><h3>What times are you available?</h3></header>
+          <ul id="available-times">
+            <li>
+              <label>
+                            <input type="checkbox" name="available-times" value="Mornings" id="available-morn">Mornings (8:00AM - 12:00PM)</label>
+            </li>
+            <li>
+              <label>
+                            <input type="checkbox" name="available-times" value="Afternoons" id="available-aft">Afternoons (12:00PM - 4:00PM)</label>
+            </li>
+            <li>
+              <label>
+                            <input type="checkbox" name="available-times" value="Evenings" id="available-eve">Evenings (4:00PM - 8:00PM)</label>
+            </li>
+          </ul>
+        <label for="Interest-Why"><h3>Why are you taking English Classes?</h3></label>
+          <textarea id="interest" name="interest" placeholder="..."></textarea>
+        </fieldset>
+        <fieldset>
+        <button type="submit" id="submit">SUBMIT</button>
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>

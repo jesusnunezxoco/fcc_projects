@@ -1,0 +1,33 @@
+html {
+	background: rgb(204, 167, 247);
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+  margin: 0 auto;
+  max-width: 55em;
+  padding-top: 1em;
+}
+
+header h1{
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px;
+  text-align: center;
+}
+ul {
+	list-style-type: none;
+}
+fieldset {
+  display: flex;
+}
+button {
+  padding: 1% 3%;
+  border-radius: 5px;
+  margin: 2% 48%;
+  background-color: rgb(249, 243, 93);
+  border: 0;
+  font-size: 1.4em;
+}

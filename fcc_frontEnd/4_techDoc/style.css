@@ -1,0 +1,9 @@
+body {
+	margin: 0;
+	background: grey;
+	font-family: Verdana;
+}
+
+li {
+	list-style: none;
+}

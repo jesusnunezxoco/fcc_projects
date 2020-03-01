@@ -4,10 +4,9 @@
 }
 
 body {
-	background: rgb(204, 167, 247);
-  font-family: 'Roboto', sans-serif;
+  background: rgb(204, 167, 247);
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
-  
 }
 
 #container {
@@ -21,7 +20,7 @@ body {
   flex-direction: column;
 }
 
-header h1{
+header h1 {
   font-weight: bold;
   margin: 1em;
   text-align: center;
@@ -32,7 +31,7 @@ header h1{
 }
 
 ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 fieldset {
@@ -61,7 +60,7 @@ button:hover {
 
 button:active {
   box-shadow: none;
-  top: 6px
+  top: 6px;
 }
 
 section {
@@ -76,5 +75,5 @@ section label {
 }
 
 legend h2 {
-  margin-bottom: 0.5em;;
+  margin-bottom: 0.5em;
 }

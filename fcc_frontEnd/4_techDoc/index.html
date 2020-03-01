@@ -1,94 +1,270 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>CSS FlexBox & Grid</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-	<link rel="stylesheet" type="text/css" href="techdocPage.css">
+  <title>CSS FlexBox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-
-	<nav id="navbar">
-		<header>CSS Flexbox</header>
+ <div id="container">
+	  <!-- FCC CHALLENGE #8 -->
+	  <nav id="navbar">
+		<!-- FCC CHALLENGE #9 & 11 -->
+		<header><h2>CSS Flexbox</h2></header>
 		<ul>
-			<a href="#introduction" class="nav-link"><li>Introduction</li></a>
-			<a href="#about_flexbox" class="nav-link"><li>About Flexbox</li></a>
-			<a href="#flex_display" class="nav-link"><li>Flex Display</li></a>
-			<a href="#flex_direction" class="nav-link"><li>Flex Direction</li></a>
-			<a href="#flex_wrap" class="nav-link"><li>Flex Wrap</li></a>
-			<a href="#flex-sizing" class="nav-link"><li>Flex Sizing</li></a>
-			<a href="#flex-orders" class="nav-link"><li>Flex Orders</li></a>
-
+			<!-- INTRO LINKS -->
+			<li><a href="#intro_to_flexbox">Introduction to Flexbox</a>
+				<ul class="dropdown">
+					<!-- FCC CHALLENGE #10 -->
+					<li><a href="#about_flexbox" class="nav-link">About Flexbox</a></li>
+					<li><a href="#basic_terminology" class="nav-link">Basic Terminology</a></li>
+				  </ul>
+			</li>
+			<!-- PARENT PROPERTY LINKS -->
+			<li><a href="#parent_properties">Parent Properties</a>
+				<ul class="dropdown">
+					<li><a href="#flex_display" class="nav-link">Flex Display</a></li>
+					<li><a href="#flex_direction" class="nav-link">Flex Direction</a></li>
+					<li><a href="#flex_wrap" class="nav-link"></a></li>
+					<li><a href="#flex_flow" class="nav-link">Flex Flow</a></li>
+					<li><a href="#justify_content" class="nav-link">Justify Content</a></li>
+					<li><a href="#align_items" class="nav-link">Align Items</a></li>
+					<li><a href="#align_content" class="nav-link">Align Content</a></li>
+				</ul>
+			</li>
+			<!-- CHILD PROPERTY LINKS -->
+			<li><a href="#child_properties">Child Properties</a>
+				<ul class="dropdown">
+					<li><a href="#order" class="nav-link">Order</a></li>
+					<li><a href="#flex_shrink" class="nav-link">Flex Shrink</a></li>
+					<li><a href="#flex_basis" class="nav-link">Flex Basis</a></li>
+					<li><a href="#align_self" class="nav-link">Align Self</a></li>
+				</ul>
+			</li>
 		</ul>
-
-	</nav>
-
-<main id="main-doc">
-	<section class="main-section" id="introduction">
-		<header>Introduction</header>
-		<article>
-			<p></p>
-			<p></p>
-		</article>
-	</section>
 	
-	<section class="main-section" id="about_flexbox">
-		<header>About Flexbox</header>
-		<article>
-			<p>Flexbox is a one-dimensional layout method for laying out items in rows or columns. Items flex to fill additional space and shrink to fit into smaller spaces. This article explains all the fundamentals.</p>
-		</article>
-	</section>
-	
-	<section class="main-section" id="flex_display">
-		<header>Flex Display</header>
-		<article>
-			<p></p>
-			<p></p>
-		</article>
-	</section>
-	
-	<section class="main-section" id="flex_direction">
-		<header>Flex Direction</header>
-		<article>
-			<p></p>
-			<p></p>
-		</article>
-	</section>
+	  </nav>
+	  <!-- FCC CHALLENGE #1 -->
+	  <div id="right_container">
+		<main id="main-doc">
+			<header><h1>CSS Flexbox</h1></header>
+		  
+			<section id="intro_to_flexbox">
+			<header>
+			  <h2>Introduction to Flexbox</h2>
+			</header>
+			<!-- FCC CHALLENGE #3 -->
+			<section class="main-section" id="about_flexbox">
+			  <header><h3>About Flexbox</h3></header>
+			  <article>
+				<p>Flexbox is a one-dimensional layout method for laying out items in rows or columns. Items flex to fill additional space and shrink to fit into smaller spaces. This article explains all the fundamentals.</p>
+			  </article>
+			</section>
 
-	<section class="main-section" id="flex_wrap">
-		<header>Flex Wrap</header>
-		<article>
-			<p></p>
-			<p></p>
-		</article>
-	</section>
+			<section class="main-section" id="basic_terminology">
+				<header><h3>Basic Terminology</h3></header>
+				<article>
+					<p>You need to be aware of several terms when it comes to Flexbox. Because it is a set of ideas and properties, as opposed to just one property, there is a lot you need to be familiar with. Below is a graphic and list of important terms and their definitions.</p>
+					<img src="terms.svg" alt="Infographic of flexbox terms explained in the list below">
+					<ul>
+						<li></li>
+					</ul>
+				</article>
+			  </section>
 
-<section class="main-section" id="flex_sizing">
-		<header>Flex Sizing</header>
-		<article>
-			<p></p>
-			<p></p>
-		</article>
-	</section>
-	
-	<section class="main-section" id="flex_orders">
-		<header>Flex Orders</header>
-		<article>
-			<p></p>
-			<p></p>
-		</article>
-	</section>
-		
-</main>
+		  </section>
+		  <!-- PARENT PROPERTIES -->
+		  <section id="parent_properties">
+			<header><h2>Parent Properties</h2></header>
+			<!-- TODO: -->
+			<section class="main-section" id="flex_display">
+			  <header><h3>Flex Display</h3></header>
+			  <article>
+				<p>The first step to using flexbox is changing the <code>display</code> of the container. </p>
+				<p>By default, the <code>display</code> setting is set to block or inline. Below are <code>div</code> squares that have an initial display value of block. </p>
+				<div class="example_code">
+					<div class="boxbg">
+						<div class="flex_item first_box">1</div>
+						<div class="flex_item second_box">2</div>
+						<div class="flex_item third_box">3</div>
+					</div>
+				</div>
+				<p>Here, the div squares have are wrapped in a container with <code>display: flex;</code> set. The three div square are now flex items. You can now manipulate them with other flex properties</p>
+				<div class="example_code">
+					<div class="boxbg flex">
+						<div class="flex_item first_box">1</div>
+						<div class="flex_item second_box">2</div>
+						<div class="flex_item third_box">3</div>
+					</div>
+				</div>
+			  </article>
+			</section>
+	  
+			<section class="main-section" id="flex_direction">
+			  <header><h3>Flex Direction</h3></header>
+			  <article>
+				<p>The main axis of the container can be changed with the <code>flex-direction</code> property.</p>
+				<p>Below is <code>flex-direction: row;</code>, which is the default setting for flex containers. The <em>main axis</em> runs from left to right, and the <em>cross axis</em> runs vertically.</p>
+				<div class="example_code">
+					<div class="boxbg flex">
+						<div class="flex_item first_box">1</div>
+						<div class="flex_item second_box">2</div>
+						<div class="flex_item third_box">3</div>
+					</div>
+				</div>
+				<p>Below is <code>flex-direction: row-reverse;</code>, which reverses the order of the flex items presented in the HTML because the <em>main start</em> and <em>main end</em> have been reversed.</p>
+				<div class="example_code">
+					<div class="boxbg flex row_reverse">
+						<div class="flex_item first_box">1</div>
+						<div class="flex_item second_box">2</div>
+						<div class="flex_item third_box">3</div>
+					</div>
+				</div>
+				<p>Below is <code>flex-direction: column;</code>, which changes the <em>main axis</em> to run vertically and the <em>crox axis</em> to run horizontally.</p>
+				<div class="example_code">
+					<div class="boxbg flex column">
+						<div class="flex_item first_box">1</div>
+						<div class="flex_item second_box">2</div>
+						<div class="flex_item third_box">3</div>
+					</div>
+				</div>
+				<p>Below is <code>flex-direction: column-reverse;</code>, which reverses the order of the flex items presented because the <em>main start</em> and <em>main end</em> have been reversed, and makes the <em>main axis</em> run vertically.</p>
+				<div class="example_code">
+					<div class="boxbg flex column_reverse">
+						<div class="flex_item first_box">1</div>
+						<div class="flex_item second_box">2</div>
+						<div class="flex_item third_box">3</div>
+					</div>
+				</div>
+			  </article>
+			</section>
+	  
+			<section class="main-section" id="flex_wrap">
+			  <header><h3>Flex Wrap</h3></header>
+			  <article>
+				<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+				<p></p>
+			  </article>
+			</section>
+	  
+			<section class="main-section" id="flex_flow">
+			  <header><h3>Flex Flow</h3></header>
+			  <article>
+				<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+				<p></p>
+			  </article>
+			</section>
+	  
+			<section class="main-section" id="justify_content">
+			  <header><h3>Justify Content</h3></header>
+			  <article>
+				<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+				<p></p>
+			  </article>
+			</section>
 
-<footer>
-	<h2>Reference List</h2>
-	<p>Below are the sources used to present the information in this article</p>
-	<ul>
-		<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank">Mozilla FireFox Flexbox</a></li>
-		<li><a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">W3 Schools FlexBox</a></li>
-	</ul>
-</footer>
+			<section class="main-section" id="align_items">
+			  <header><h3>Align Items</h3></header>
+			  <article>
+				<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+				<p></p>
+			  </article>
+			</section>
 
+			<section class="main-section" id="align_content">
+			  <header><h3>Align Content</h3></header>
+			  <article>
+				<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+				<p></p>
+			  </article>
+			</section>
+
+		  </section>
+		  <!-- CHILD PROPERTIES -->
+		  <section id="child_properties">
+			<header><h2>Child Properties</h2></header>
+
+			<section class="main-section" id="order">
+				<header><h3>Order</h3></header>
+				<article>
+					<p>The <code>order</code> property controls the order a flex item appears. Otherwise, the order will be however it is presented in the html</p>
+					<p>Below, the order property is not set. The boxes are in the order that they are in presented in their HTML.</p>
+					<div class="example_code">
+						<div class="flex center_horiz boxbg">
+							<div class="flex_item first_box">1</div>
+							<div class="flex_item second_box">2</div>
+							<div class="flex_item third_box">3</div>
+						</div>
+					</div>
+					<p>Below, the <code>order</code> property of the second box is set to the integer 1.</p>
+					<div class="example_code ">
+						<div class="flex center_horiz boxbg">
+							<div class="flex_item first_box">1</div>
+							<div class="flex_item second_box" id="order_2">2</div>
+							<div class="flex_item third_box">3</div>
+						</div>
+					</div>
+					<p>Below, the <code>order</code> proper of the second box is set to the integer -1</p>
+					<div class="example_code">
+						<div class="flex center_horiz boxbg">
+							<div class="flex_item first_box">1</div>
+							<div class="flex_item second_box" id="order_minus1">2</div>
+							<div class="flex_item third_box">3</div>
+						</div>
+					</div>
+				</article>
+			  </section>
+
+			  <section class="main-section" id="flex_grow">
+				<header><h3>Flex Grow</h3></header>
+				<article>
+				  <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+				  <p></p>
+				</article>
+			  </section>
+
+			  <section class="main-section" id="flex_shrink">
+				<header><h3>Flex Shrink</h3></header>
+				<article>
+				  <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+				  <p></p>
+				</article>
+			  </section>
+
+			  <section class="main-section" id="flex_basis">
+				<header><h3>Flex Basis</h3></header>
+				<article>
+				  <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+				  <p></p>
+				</article>
+			  </section>
+
+			  <section class="main-section" id="align_self">
+				<header><h3>Align Self</h3></header>
+				<article>
+				  <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+				  <p></p>
+				</article>
+			  </section>
+
+		  </section>
+		</main>
+	  
+		<footer>
+		  <h2>Reference List</h2>
+		  <p>Below are the sources used to present the information in this article</p>
+		  <ul>
+			<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank">Mozilla
+				FireFox Flexbox</a></li>
+			<li><a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">W3 Schools FlexBox</a></li>
+		  </ul>
+		</footer>
+	  </div>
+ </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>

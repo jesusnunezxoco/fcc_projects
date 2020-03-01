@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: cornflowerblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 10%;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 0.25em;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin-bottom: 0.5em;
+}
+
+#img-div {
+    background: rgb(246, 245, 139);
+    padding: 15px;
+    margin-bottom: 1em;
+}
+
+section, article {
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 2.75rem;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.25em;
+    text-align: center;
+}
+
+footer {
+    margin-top: 1em;
+}

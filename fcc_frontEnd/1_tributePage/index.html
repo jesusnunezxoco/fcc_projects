@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>The Life of Juventino Rosas</title>
-	<style type="text/css" src="tributePage.css"></style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div id="main">
@@ -10,35 +10,57 @@
 	<hr>
 	<div = id="img-div">
 		<figure>
-	<img src="https://www.wfmt.com/wp-content/uploads/2017/05/Rosas_745.jpg" alt="Composer Juventino Rosas portrait with a music sheet background">
-	<figcaption>Composter Juventino Rosas</figcaption>
+	<img id="image" src="https://www.wfmt.com/wp-content/uploads/2017/05/Rosas_745.jpg" alt="Composer Juventino Rosas portrait with a music sheet background">
+	<figcaption id="img-caption">Composer Juventino Rosas</figcaption>
 		</figure>
 	</div>
 	<div id="tribute-info">
-		<h2>About</h2>
-		<p></p>
-		<h2>History</h2>
-		<p></p>
-		<h2>Compositions</h2>
-			<h3>Waltzes</h3>
+		<section id="about">
+			<h2>About</h2>
+		<p>José Juventino Policarpo Rosas Cadenas (25 January 1868 – 9 July 1894) was a Mexican composer and violinist.</p>
+		</section>
+		<section>
+			<h2>History</h2>
+		<ul>
+			<li><strong>1868</strong> - Rosas was born in Santa Cruz, Guanajuato, which was later renamed Santa Cruz de Galeana, Guanajuato, and still later into Santa Cruz de Juventino Rosas.</li>
+			<li><strong>1891</strong> - He worked in Michoacan, reportedly as a member of a millitary band</li>
+			<li><strong>1892</strong> - Joined an orchest and went on tour in the USA and perofrmed at the World Columbian Exposition World's Fair in Chicago, Illinois</li>
+			<li><strong>1894</strong> - went for a several-month tour to Cuba with an Italian-Mexican ensemble, where he came down with major health problems. He died there at the age of 26.</li>
+			<li><strong>1950</strong> - The 1950 film <a href="https://en.wikipedia.org/wiki/Over_the_Waves_(film)">Over the Waves</a> was based on his life</li>
+			
+		</ul>
+		</section>
+		<section id="compositions">
+			<h2>Compositions</h2>
+			<article>
+				<h3>Waltzes</h3>
 			<ul>
 				<li><em>Sobre las Olas</em> (1888)</li>
 			</ul>
-			<h3>Polkas</h3>
+			</article>
+
+			<article>
+				<h3>Polkas</h3>
 			<ul>
 				<li><em>La cantinera</em> (1888, A. Wagner y Levien, Mexico City / Friedrich Hofmeister, Leipzig)</li>
 				<li><em>Carmela</em> (1890, A. Wagner y Levien, Mexico City / Friedrich Hofmeister, Leipzig)</li>
-				<li>Ojos negros</em> (1891, A. Wagner y Levien, Mexico City / Friedrich Hofmeister, Leipzig)</li>
+				<li><em>Ojos negros</em> (1891, A. Wagner y Levien, Mexico City / Friedrich Hofmeister, Leipzig)</li>
 				<li><em>Flores de México</em> (1893, Eduardo Gariel, Saltillo / Robert Forberg, Leipzig)</li>
 			</ul>
-			<h3>Mazurcas</h3>
+			</article>
+
+			<article>
+				<h3>Mazurcas</h3>
 			<ul>
 				<li><em>Acuérdate</em> (before 1888, A. Wagner y Levien, Mexico City)</li>
 				<li><em>Lejos de ti</em> (before 1888, H. Nagl. Sucs.)</li>
 				<li><em>Juanita</em> (1890, A. Wagner y Levien Sucs., Mexico City / Friedrich Hofmeister, Leipzig)</li>
 				<li><em>Último adiós</em> (1899, A. Wagner y Levien Sucs., Mexico City / Friedrich Hofmeister, Leipzig)</li>
 			</ul>
-			<h3>Schottishes</h3>
+			</article>
+
+			<article>
+				<h3>Schottishes</h3>
 			<ul>
 				<li><em>El sueño de las flores</em> (before 1888, A. Wagner y Levien, Mexico City / Friedrich Hofmeister, Leipzig)</li>
 				<li><em>Floricultura-Schottisch</em> (before 1888, A. Wagner y Levien, Mexico City / Friedrich Hofmeister, Leipzig)</li>
@@ -48,9 +70,12 @@
 				<li><em>Juventa</em> (1892, A. Wagner y Levien Sucs., Mexico City / Friedrich Hofmeister, Leipzig)</li>
 				<li><em>El espirituano</em> (1894, Autograph Archivo Provincial de Sancti Spíritus, Kuba)</li>
 			</ul>
-			<h3>Danzas</h3>
+			</article>
+			
+			<article>
+				<h3>Danzas</h3>
 			<ul>
-				<li><em>A Lupe (1888, A. Wagner y Levien, Mexico City / Friedrich Hofmeister, Leipzig)</li>
+				<li><em>A Lupe</em> (1888, A. Wagner y Levien, Mexico City / Friedrich Hofmeister, Leipzig)</li>
 				<li><em>En el casino</em> (1888, A. Wagner y Levien, Mexico City / Friedrich Hofmeister, Leipzig)</li>
 				<li><em>Juanita</em> (1888, A. Wagner y Levien, Mexico City / Friedrich Hofmeister, Leipzig)</li>
 				<li><em>No me acuerdo</em> (1888, A. Wagner y Levien, Mexico City / Friedrich Hofmeister, Leipzig)</li>
@@ -58,11 +83,13 @@
 				<li><em>¿Y para qué?</em> (1888, A. Wagner y Levien, Mexico City / Friedrich Hofmeister, Leipzig)</li>
 				<li><em>Flores de Romana</em> (1893, Eduardo Gariel, Saltillo)</li>
 			</ul>
-			
+			</article>
+		</section>
 	</div>
 	<footer>
 		<p>For more info, please follow this link to <a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Juventino_Rosas">Juvention Rosas' Wikipedia Page</a>.</p>
 	</footer>
 </div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

@@ -9,216 +9,484 @@
 </head>
 
 <body>
- <div id="container">
-	  <!-- FCC CHALLENGE #8 -->
-	  <nav id="navbar">
-		<!-- FCC CHALLENGE #9 & 11 -->
-		<header><h2>CSS Flexbox</h2></header>
-		<ul>
-			<!-- INTRO LINKS -->
-			<li><a href="#intro_to_flexbox">Introduction to Flexbox</a>
-				<ul class="dropdown">
-					<!-- FCC CHALLENGE #10 -->
-					<li><a href="#about_flexbox" class="nav-link">About Flexbox</a></li>
-					<li><a href="#basic_terminology" class="nav-link">Basic Terminology</a></li>
-				  </ul>
-			</li>
-			<!-- PARENT PROPERTY LINKS -->
-			<li><a href="#parent_properties">Parent Properties</a>
-				<ul class="dropdown">
-					<li><a href="#flex_display" class="nav-link">Flex Display</a></li>
-					<li><a href="#flex_direction" class="nav-link">Flex Direction</a></li>
-					<li><a href="#flex_wrap" class="nav-link"></a></li>
-					<li><a href="#flex_flow" class="nav-link">Flex Flow</a></li>
-					<li><a href="#justify_content" class="nav-link">Justify Content</a></li>
-					<li><a href="#align_items" class="nav-link">Align Items</a></li>
-					<li><a href="#align_content" class="nav-link">Align Content</a></li>
-				</ul>
-			</li>
-			<!-- CHILD PROPERTY LINKS -->
-			<li><a href="#child_properties">Child Properties</a>
-				<ul class="dropdown">
-					<li><a href="#order" class="nav-link">Order</a></li>
-					<li><a href="#flex_shrink" class="nav-link">Flex Shrink</a></li>
-					<li><a href="#flex_basis" class="nav-link">Flex Basis</a></li>
-					<li><a href="#align_self" class="nav-link">Align Self</a></li>
-				</ul>
-			</li>
-		</ul>
-	
-	  </nav>
-	  <!-- FCC CHALLENGE #1 -->
-	  <div id="right_container">
-		<main id="main-doc">
-			<header><h1>CSS Flexbox</h1></header>
-		  
-			<section id="intro_to_flexbox">
-			<header>
-			  <h2>Introduction to Flexbox</h2>
-			</header>
-			<!-- FCC CHALLENGE #3 -->
-			<section class="main-section" id="about_flexbox">
-			  <header><h3>About Flexbox</h3></header>
-			  <article>
-				<p>Flexbox is a one-dimensional layout method for laying out items in rows or columns. Items flex to fill additional space and shrink to fit into smaller spaces. This article explains all the fundamentals.</p>
-			  </article>
-			</section>
+  <div id="container">
+    <!-- FCC CHALLENGE #8 -->
+    <div id="nav_parent">
+      <nav id="navbar">
+        <!-- FCC CHALLENGE #9 & 11 -->
+        <header>
+          <h2>CSS Flexbox</h2>
+        </header>
+        <div id="nav_menu">
+          <ul>
+            <!-- INTRO LINKS -->
+            <li><a href="#introduction_to_flexbox" class="nav-link">Introduction to Flexbox</a>
+              <ul class="dropdown">
+                <!-- FCC CHALLENGE #10 -->
+                <li><a href="#about_flexbox" class="nav-link">About Flexbox</a></li>
+                <li><a href="#basic_terminology" class="nav-link">Basic Terminology</a></li>
+              </ul>
+            </li>
+            <!-- PARENT PROPERTY LINKS -->
+            <li><a href="#parent_properties" class="nav-link">Parent Properties</a>
+              <ul class="dropdown">
+                <li><a href="#flex_display" class="nav-link">Flex Display</a></li>
+                <li><a href="#flex_direction" class="nav-link">Flex Direction</a></li>
+                <li><a href="#justify_content" class="nav-link">Justify Content</a></li>
+                <li><a href="#align_items" class="nav-link">Align Items</a></li>
+                <li><a href="#flex_wrap" class="nav-link">Flex Wrap</a></li>
+                <li><a href="#align_content" class="nav-link">Align Content</a></li>
+              </ul>
+            </li>
+            <!-- CHILD PROPERTY LINKS -->
+            <li><a href="#child_properties" class="nav-link">Child Properties</a>
+              <ul class="dropdown">
+                <li><a href="#order" class="nav-link">Order</a></li>
+                <!-- TODO: The rest of child properties -->
+                <!-- <li><a href="#flex_grow" class="nav-link">Flex Grow</a></li>
+							<li><a href="#flex_shrink" class="nav-link">Flex Shrink</a></li>
+							<li><a href="#flex_basis" class="nav-link">Flex Basis</a></li>
+							<li><a href="#align_self" class="nav-link">Align Self</a></li> -->
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- FCC CHALLENGE #1 -->
+    <div id="right_container">
+      <main id="main-doc">
+        <header>
+          <h1 id="main-title">CSS Flexbox</h1>
+        </header>
 
-			<section class="main-section" id="basic_terminology">
-				<header><h3>Basic Terminology</h3></header>
-				<article>
-					<p>You need to be aware of several terms when it comes to Flexbox. Because it is a set of ideas and properties, as opposed to just one property, there is a lot you need to be familiar with. Below is a graphic and list of important terms and their definitions.</p>
-					<img src="terms.svg" alt="Infographic of flexbox terms explained in the list below">
-					<ul>
-						<li></li>
-					</ul>
-				</article>
-			  </section>
+        <section id="introduction_to_flexbox" class="main-section">
+          <header>
+            <h2>Introduction to Flexbox</h2>
+          </header>
+          <!-- FCC CHALLENGE #3 -->
+          <section class="main-section" id="about_flexbox">
+            <header>
+              <h3>About Flexbox</h3>
+            </header>
+            <article>
+              <p>Flexbox is a one-dimensional layout method for laying out items in rows or columns. Items flex to fill
+                additional space and shrink to fit into smaller spaces. This article explains all the fundamentals.</p>
+            </article>
+          </section>
 
-		  </section>
-		  <!-- PARENT PROPERTIES -->
-		  <section id="parent_properties">
-			<header><h2>Parent Properties</h2></header>
-			<!-- TODO: -->
-			<section class="main-section" id="flex_display">
-			  <header><h3>Flex Display</h3></header>
-			  <article>
-				<p>The first step to using flexbox is changing the <code>display</code> of the container. </p>
-				<p>By default, the <code>display</code> setting is set to block or inline. Below are <code>div</code> squares that have an initial display value of block. </p>
-				<div class="example_code">
-					<div class="boxbg">
-						<div class="flex_item first_box">1</div>
-						<div class="flex_item second_box">2</div>
-						<div class="flex_item third_box">3</div>
-					</div>
-				</div>
-				<p>Here, the div squares have are wrapped in a container with <code>display: flex;</code> set. The three div square are now flex items. You can now manipulate them with other flex properties</p>
-				<div class="example_code">
-					<div class="boxbg flex">
-						<div class="flex_item first_box">1</div>
-						<div class="flex_item second_box">2</div>
-						<div class="flex_item third_box">3</div>
-					</div>
-				</div>
-			  </article>
-			</section>
-	  
-			<section class="main-section" id="flex_direction">
-			  <header><h3>Flex Direction</h3></header>
-			  <article>
-				<p>The main axis of the container can be changed with the <code>flex-direction</code> property.</p>
-				<p>Below is <code>flex-direction: row;</code>, which is the default setting for flex containers. The <em>main axis</em> runs from left to right, and the <em>cross axis</em> runs vertically.</p>
-				<div class="example_code">
-					<div class="boxbg flex">
-						<div class="flex_item first_box">1</div>
-						<div class="flex_item second_box">2</div>
-						<div class="flex_item third_box">3</div>
-					</div>
-				</div>
-				<p>Below is <code>flex-direction: row-reverse;</code>, which reverses the order of the flex items presented in the HTML because the <em>main start</em> and <em>main end</em> have been reversed.</p>
-				<div class="example_code">
-					<div class="boxbg flex row_reverse">
-						<div class="flex_item first_box">1</div>
-						<div class="flex_item second_box">2</div>
-						<div class="flex_item third_box">3</div>
-					</div>
-				</div>
-				<p>Below is <code>flex-direction: column;</code>, which changes the <em>main axis</em> to run vertically and the <em>crox axis</em> to run horizontally.</p>
-				<div class="example_code">
-					<div class="boxbg flex column">
-						<div class="flex_item first_box">1</div>
-						<div class="flex_item second_box">2</div>
-						<div class="flex_item third_box">3</div>
-					</div>
-				</div>
-				<p>Below is <code>flex-direction: column-reverse;</code>, which reverses the order of the flex items presented because the <em>main start</em> and <em>main end</em> have been reversed, and makes the <em>main axis</em> run vertically.</p>
-				<div class="example_code">
-					<div class="boxbg flex column_reverse">
-						<div class="flex_item first_box">1</div>
-						<div class="flex_item second_box">2</div>
-						<div class="flex_item third_box">3</div>
-					</div>
-				</div>
-			  </article>
-			</section>
-	  
-			<section class="main-section" id="flex_wrap">
-			  <header><h3>Flex Wrap</h3></header>
-			  <article>
-				<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-				<p></p>
-			  </article>
-			</section>
-	  
-			<section class="main-section" id="flex_flow">
-			  <header><h3>Flex Flow</h3></header>
-			  <article>
-				<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-				<p></p>
-			  </article>
-			</section>
-	  
-			<section class="main-section" id="justify_content">
-			  <header><h3>Justify Content</h3></header>
-			  <article>
-				<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-				<p></p>
-			  </article>
-			</section>
+          <section class="main-section" id="basic_terminology">
+            <header>
+              <h3>Basic Terminology</h3>
+            </header>
+            <article>
+              <p>You need to be aware of several terms when it comes to Flexbox. Because it is a set of ideas and
+                properties, as opposed to just one property, there is a lot you need to be familiar with. Below is a
+                graphic and list of important terms and their definitions.</p>
+              <img src="terms.svg" alt="Infographic of flexbox terms explained in the list below">
+              <ul>
+                <li><strong>main axis</strong> - The main axis of a flex container is the primary axis along which flex
+                  items are laid out</li>
+                <li><strong>main-start | main-end</strong> - The flex items are placed within the container starting
+                  from main-start and going to main-end.</li>
+                <li><strong>main size</strong> - A flex item's width or height, whichever is in the main dimension, is
+                  the item's main size. The flex item's main size property is either the ‘width’ or ‘height’ property,
+                  whichever is in the main dimension.</li>
+                <li><strong>cross axis</strong> - The axis perpendicular to the main axis is called the cross axis. Its
+                  direction depends on the main axis direction.</li>
+                <li><strong>cross-start | cross-end</strong> - Flex lines are filled with items and placed into the
+                  container starting on the cross-start side of the flex container and going toward the cross-end side.
+                </li>
+                <li><strong>cross size</strong> - The width or height of a flex item, whichever is in the cross
+                  dimension, is the item's cross size. The cross size property is whichever of ‘width’ or ‘height’ that
+                  is in the cross dimension.</li>
+              </ul>
+            </article>
+          </section>
 
-			<section class="main-section" id="align_items">
-			  <header><h3>Align Items</h3></header>
-			  <article>
-				<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-				<p></p>
-			  </article>
-			</section>
+        </section>
+        <!-- PARENT PROPERTIES -->
+        <section id="parent_properties" class="main-section">
+          <header>
+            <h2>Parent Properties</h2>
+          </header>
+          <section class="main-section" id="flex_display">
+            <header>
+              <h3>Flex Display</h3>
+            </header>
+            <article>
+              <p>The first step to using flexbox is changing the <code>display</code> of the container. </p>
+              <p>By default, the <code>display</code> setting is set to block or inline. Below are <code>div</code>
+                squares that have an initial display value of block. </p>
+              <div class="example_code">
+                <div class="item_bg">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                </div>
+              </div>
+              <p>Here, the div squares have are wrapped in a container with <code>display: flex;</code> set. The three
+                div square are now flex items. You can now manipulate them with other flex properties</p>
+              <div class="example_code">
+                <div class="item_bg flex">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                </div>
+              </div>
+            </article>
+          </section>
 
-			<section class="main-section" id="align_content">
-			  <header><h3>Align Content</h3></header>
-			  <article>
-				<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-				<p></p>
-			  </article>
-			</section>
+          <section class="main-section" id="flex_direction">
+            <header>
+              <h3>Flex Direction</h3>
+            </header>
+            <article>
+              <p>The main axis of the container can be changed with the <code>flex-direction</code> property.</p>
+              <p>Below is <code>flex-direction: row;</code>, which is the default setting for flex containers. The
+                <em>main axis</em> runs from left to right, and the <em>cross axis</em> runs vertically.</p>
+              <div class="example_code">
+                <div class="item_bg flex">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                </div>
+              </div>
+              <p>Below is <code>flex-direction: row-reverse;</code>, which reverses the order of the flex items
+                presented in the HTML because the <em>main start</em> and <em>main end</em> have been reversed.</p>
+              <div class="example_code">
+                <div class="item_bg flex row_reverse">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                </div>
+              </div>
+              <p>Below is <code>flex-direction: column;</code>, which changes the <em>main axis</em> to run vertically
+                and the <em>crox axis</em> to run horizontally.</p>
+              <div class="example_code">
+                <div class="item_bg flex column">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                </div>
+              </div>
+              <p>Below is <code>flex-direction: column-reverse;</code>, which reverses the order of the flex items
+                presented because the <em>main start</em> and <em>main end</em> have been reversed, and makes the
+                <em>main axis</em> run vertically.</p>
+              <div class="example_code">
+                <div class="item_bg flex column_reverse">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                </div>
+              </div>
+            </article>
+          </section>
 
-		  </section>
-		  <!-- CHILD PROPERTIES -->
-		  <section id="child_properties">
-			<header><h2>Child Properties</h2></header>
+          <section class="main-section" id="justify_content">
+            <header>
+              <h3>Justify Content</h3>
+            </header>
+            <article>
+              <p>You can adjust where flex items are and spready out along the main axis with the
+                <code>justify-content</code> property.</p>
+              <p>Below, you can see the default setting, <code>justify-content: flex-start;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+              <p>Below, you can see <code>justify-content: flex-end;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex justify_end">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+              <p>Below, you can see <code>justify-content: center;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex justify_center">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+              <p>Below, you can see <code>justify-content: flex-end;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex justify_end">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+              <p>Below, you can see <code>justify-content: space-around;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex justify_around">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+              <p>Below, you can see <code>justify-content: space-between;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex justify_between">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+              <p>Below, you can see <code>justify-content: space-evenly;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex justify_evenly">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+            </article>
+          </section>
 
-			<section class="main-section" id="order">
-				<header><h3>Order</h3></header>
-				<article>
-					<p>The <code>order</code> property controls the order a flex item appears. Otherwise, the order will be however it is presented in the html</p>
-					<p>Below, the order property is not set. The boxes are in the order that they are in presented in their HTML.</p>
-					<div class="example_code">
-						<div class="flex center_horiz boxbg">
-							<div class="flex_item first_box">1</div>
-							<div class="flex_item second_box">2</div>
-							<div class="flex_item third_box">3</div>
-						</div>
-					</div>
-					<p>Below, the <code>order</code> property of the second box is set to the integer 1.</p>
-					<div class="example_code ">
-						<div class="flex center_horiz boxbg">
-							<div class="flex_item first_box">1</div>
-							<div class="flex_item second_box" id="order_2">2</div>
-							<div class="flex_item third_box">3</div>
-						</div>
-					</div>
-					<p>Below, the <code>order</code> proper of the second box is set to the integer -1</p>
-					<div class="example_code">
-						<div class="flex center_horiz boxbg">
-							<div class="flex_item first_box">1</div>
-							<div class="flex_item second_box" id="order_minus1">2</div>
-							<div class="flex_item third_box">3</div>
-						</div>
-					</div>
-				</article>
-			  </section>
+          <section class="main-section" id="align_items">
+            <header>
+              <h3>Align Items</h3>
+            </header>
+            <article>
+              <p>You can change how flex items are arranged along the cross axis with <code>align-items</code></p>
+              <p>Below, you can see <code>align-items: stretch;</code>. In this case, we don't have a height set to the
+                div boxes. The height takes up the remaining space of the cross axis in this setting. This is the
+                default behavior:</p>
+              <div class="example_code">
+                <div class="item_bg flex extra_space align_items_stretch">
+                  <div class="flex_item item_1 box_width">1</div>
+                  <div class="flex_item item_2 box_width">2</div>
+                  <div class="flex_item item_3 box_width">3</div>
+                  <div class="flex_item item_4 box_width">4</div>
+                  <div class="flex_item item_5 box_width">5</div>
+                  <div class="flex_item item_6 box_width">6</div>
+                </div>
+              </div>
+              <p>Below, you can see <code>align-items: flex-start;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex extra_space">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+              <p>Below, you can see <code>align-items: flex-end;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex extra_space align_items_end">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+              <p>Below, you can see <code>align-items: center;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex extra_space align_items_center">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+              <p>Below, you can see <code>align-items: baseline;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex align_items_baseline">
+                  <div class="flex_item item_1 box short_box">1</div>
+                  <div class="flex_item item_2 box tall_box">2</div>
+                  <div class="flex_item item_3 box shorter_box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box short_box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+            </article>
+          </section>
+          <section class="main-section" id="flex_wrap">
+            <header>
+              <h3>Flex Wrap</h3>
+            </header>
+            <article>
+              <p>You can decide what will happen to your flex items when their isn't enough width to hold them in their
+                container using the <code>flex-wrap</code> property. For the images below, try changing the browser
+                width to compare how different settings are different.</p>
+              <p>Below, you can see the default setting, <code>flex-wrap: nowrap;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+              <p>Below, you can see <code>flex-wrap: wrap;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex wrap">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+              <p>Below, you can see <code>flex-wrap: wrap-reverse;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex wrap_reverse">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+            </article>
+          </section>
 
-			  <section class="main-section" id="flex_grow">
+          <section class="main-section" id="align_content">
+            <header>
+              <h3>Align Content</h3>
+            </header>
+            <article>
+              <p>You can align a flex container's lines within when there is extra space in the cros-axis, and there are
+                multiple lines of flex items from being wrapped.</p>
+              <p>Below, you can see <code>align-content: flex-start;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex wrap extra_space">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+              <p>Below, you can see <code>align-content: flex-end;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex align_content_end wrap extra_space">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+              <p>Below, you can see <code>align-content: center;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex align_content_center wrap extra_space">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+              <p>Below, you can see <code>align-content: space-between;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex align_content_between wrap extra_space">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+              <p>Below, you can see <code>align-content: space-around;</code>:</p>
+              <div class="example_code">
+                <div class="item_bg flex align_content_around wrap extra_space">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                  <div class="flex_item item_4 box">4</div>
+                  <div class="flex_item item_5 box">5</div>
+                  <div class="flex_item item_6 box">6</div>
+                </div>
+              </div>
+            </article>
+          </section>
+
+        </section>
+        <!-- CHILD PROPERTIES -->
+        <section id="child_properties" class="main-section">
+          <header>
+            <h2>Child Properties</h2>
+          </header>
+
+          <section class="main-section" id="order">
+            <header>
+              <h3>Order</h3>
+            </header>
+            <article>
+              <p>The <code>order</code> property controls the order a flex item appears. Otherwise, the order will be
+                however it is presented in the html</p>
+              <p>Below, the order property is not set. The boxes are in the order that they are in presented in their
+                HTML.</p>
+              <div class="example_code">
+                <div class="flex justify_evenly item_bg">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                </div>
+              </div>
+              <p>Below, the <code>order</code> property of the second box is set to the integer 1.</p>
+              <div class="example_code ">
+                <div class="flex justify_evenly item_bg">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box" id="order_2">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                </div>
+              </div>
+              <p>Below, the <code>order</code> proper of the second box is set to the integer -1</p>
+              <div class="example_code">
+                <div class="flex justify_evenly item_bg">
+                  <div class="flex_item item_1 box">1</div>
+                  <div class="flex_item item_2 box" id="order_minus1">2</div>
+                  <div class="flex_item item_3 box">3</div>
+                </div>
+              </div>
+            </article>
+          </section>
+          <!-- TODO: The rest of child properties -->
+          <!-- <section class="main-section" id="flex_grow">
 				<header><h3>Flex Grow</h3></header>
 				<article>
 				  <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
@@ -250,20 +518,21 @@
 				</article>
 			  </section>
 
-		  </section>
-		</main>
-	  
-		<footer>
-		  <h2>Reference List</h2>
-		  <p>Below are the sources used to present the information in this article</p>
-		  <ul>
-			<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank">Mozilla
-				FireFox Flexbox</a></li>
-			<li><a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">W3 Schools FlexBox</a></li>
-		  </ul>
-		</footer>
-	  </div>
- </div>
+		  </section> -->
+      </main>
+
+      <footer>
+        <h2>Reference List</h2>
+        <p>Below are the sources used to present the information in this article</p>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank">Mozilla
+              FireFox Flexbox</a></li>
+          <li><a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">W3 Schools FlexBox</a></li>
+          <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Tricks</a></li>
+        </ul>
+      </footer>
+    </div>
+  </div>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 

@@ -24,7 +24,7 @@ function orbitalPeriod(arr) {
 
 console.log("1");
 orbitalPeriod([{ name: "sputnik", avgAlt: 35873.5553 }]);
-console.log("2");flaura pausni
+console.log("2");
 orbitalPeriod([
   { name: "iss", avgAlt: 413.6 },
   { name: "hubble", avgAlt: 556.7 },

@@ -1,0 +1,332 @@
+<html>
+
+<head>
+  <title>ESL Student Interest Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <div id="container">
+    <main>
+      <header>
+        <!-- FCC Challenge #1-->
+        <h1 id="title">ESL Student Interest Form</h1>
+        <!-- FCC Challenge #2 -->
+        <p id="description">Please complete the information below if you are intrested in English classes. Our staff
+          will be in contact with you as soon as possible once submitted.</p>
+      </header>
+      <!-- FCC Challenge #3 -->
+      <form id="survey-form">
+        <fieldset>
+          <legend>
+            <h2>Personal Information</h2>
+          </legend>
+          <div class="field-container">
+            <section>
+              <label for="name">
+                <h3>First Name:</h3>
+              </label>
+              <input type="text" name="name" id="name-first" placeholder="John" required>
+            </section>
+
+            <section>
+              <label for="name-middle">
+                <h3>Middle Name:</h3>
+              </label>
+              <input type="text" name="name" id="name-middle" placeholder="Robert">
+            </section>
+
+            <section>
+              <label for="name-last">
+                <h3>Last Name:</h3>
+              </label>
+              <input type="text" name="name" id="name-last" placeholder="Doe" required>
+            </section>
+            <!-- FCC Challenge #10 -->
+            <section>
+              <label for="name" id="name-label">
+                <h3>Preferred Name:</h3>
+              </label>
+              <input type="text" name="name" id="name" placeholder="Joe" required>
+            </section>
+            <!-- FCC Challenge #4 & #11 -->
+            <section>
+              <label for="name">
+                <h3>Street Address:</h3>
+              </label>
+              <input type="text" name="address" id="address-street" placeholder="5604 Manor Road" required>
+            </section>
+
+            <section>
+              <label for="name">
+                <h3>City:</h3>
+              </label>
+              <input type="text" name="address" id="address-city" placeholder="Austin" required>
+            </section>
+
+            <section>
+              <label for="address-state">
+                <h3>State:</h3>
+              </label>
+              <input type="text" name="address" id="address-state" placeholder="TX" maxlength="2" required>
+            </section>
+
+            <section>
+              <label for="address-zipcode">
+                <h3>Zip Code:</h3>
+              </label>
+              <input type="text" name="address" id="address-zipcode" placeholder="78723" maxlength="5">
+            </section>
+
+            <section>
+              <label for="date-birth">
+                <h3>Date of Birth:</h3>
+              </label>
+              <input type="date" name="date-birth" id="date-birth">
+            </section>
+
+            <section>
+              <!-- FCC Challenge #10 -->
+              <label for="name" id="email-label">
+                <h3>E-Mail:</h3>
+              </label>
+              <!-- FCC Challenge #5 & #6 & #11-->
+              <input type="email" name="contact" id="email" placeholder="blank@email.com" required>
+            </section>
+
+            <section>
+              <label for="phone">
+                <h3>Phone Number:</h3>
+              </label>
+              <input type="tel" name="contact" id="phone" placeholder="512-555-555">
+            </section>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <h2>Demographic Information</h2>
+          </legend>
+          <div class="field-container">
+            <!-- FCC Challenge #16 -->
+            <section>
+              <label for="dem-gender">
+                <h3>Gender:</h3>
+              </label>
+              <ul id="dem-gender">
+                <li><label for="gender-male"><input type="radio" name="gender" id="gender-male"
+                      value="male">Male</label></li>
+                <li><label for="gender-female"><input type="radio" name="gender" id="gender-female"
+                      value="female">Female</label></li>
+                <li><label for="gender-trans"><input type="radio" name="gender" id="gender-female"
+                      value="trans">Trans</label></li>
+                <li><label for="gender-nonbinary"><input type="radio" name="gender" id="gender-nonbinary"
+                      value="nonbinary">Non-Binary</label></li>
+                <li><label for="gender-notlisted"><input type="radio" name="gender" id="gender-notlisted"
+                      value="notlisted">Not Listed</label></li>
+              </ul>
+            </section>
+
+            <section>
+              <label for="dem-ethnicity">
+                <h3>Ethnicity:</h3>
+              </label>
+              <ul id="dem-ethnicity">
+                <li><label for="ethnicity-hispanic"><input type="radio" name="ethnicity" id="ethnicity-hispanic"
+                      value="hispanic">Hispanic</label></li>
+                <li><label for="ethnicity-nonhispanic"><input type="radio" name="ethnicity" id="ethnicity-nonhispanic"
+                      value="nonhispanic">Non Hispanic</label></li>
+              </ul>
+            </section>
+
+            <section>
+              <label for="dem-race">
+                <h3>Race: (Check all that apply)</h3>
+              </label>
+              <ul id="dem-race">
+                <li><label for="race-asian"><input type="checkbox" name="race" id="race-asian"
+                      value="asian">Asian</label></li>
+                <li><label for="race-black"><input type="checkbox" name="race" id="race-black" value="black">Black or
+                    African Descent</label></li>
+                <li><label for="race-white"><input type="checkbox" name="race" id="race-white" value="white">White or
+                    European descent</label></li>
+                <li><label for="race-pacific"><input type="checkbox" name="race" id="race-pacific"
+                      value="pacific">Native Hawaiian/Pacific Islander</label></li>
+                <li><label for="race-nosay"><input type="checkbox" name="race" id="race-nosay" value="nosay">Prefer Not
+                    To Say</label></li>
+              </ul>
+            </section>
+
+            <section>
+              <label for="country">
+                <h3>Country of Origin:</h3>
+              </label>
+              <input type="text" name="country" id="country">
+            </section>
+
+            <section>
+              <label for="language">
+                <h3>Preferred Language</h3>
+              </label>
+              <input type="text" name="language" id="language">
+            </section>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <h2>Work and Education Information</h2>
+          </legend>
+          <div class="field-container">
+            <section>
+              <label for="dropdown">
+                <h3>What is your highest level of education?</h3>
+              </label>
+              <!-- FCC Challenge #12 -->
+              <select id="dropdown">
+                <option disabled value>Select Education</option>
+                <option>No Education</option>
+                <option disabled>Elementary</option>
+                <option>Kindergarten</option>
+                <option>1st Grade</option>
+                <option>2nd Grade</option>
+                <option>3rd Grade</option>
+                <option>4th Grade</option>
+                <option>5th Grade</option>
+                <option disabled>Middle School</option>
+                <option>6th Grade</option>
+                <option>7th Grade</option>
+                <option>8th Grade</option>
+                <option disabled>High School</option>
+                <option>9th Grade</option>
+                <option>10th Grade</option>
+                <option>11th Grade</option>
+                <option>12th Grade</option>
+                <option disabled>Higher Education</option>
+                <option>Certificate/Trade</option>
+                <option>Associate's Degree</option>
+                <option>Bachelor's Degree</option>
+                <option>Master's Degree</option>
+                <option>Doctorate, Ph.D, Professional Degree</option>
+              </select>
+            </section>
+
+            <section>
+              <label for="work">
+                <h3>Do you work?</h3>
+              </label>
+              <ul id="work">
+                <li><label for="work-yes"><input type="radio" name="work" id="work-yes" value="yes">Yes</label></li>
+                <li><label for="work-no"><input type="radio" name="work" id="work-no" value="no">No</label></li>
+              </ul>
+            </section>
+
+            <section>
+              <label for="work-hours">
+                <h3>How many hours do you work?</h3>
+              </label>
+              <input type="number" name="work" id="work-hours">
+            </section>
+
+            <section>
+              <label for="work-rate">
+                <h3>What rate do you get paid?</h3>
+              </label>
+              <ul id="work-rate">
+                <li><label for="work-hourly"><input type="radio" name="work-rate" id="work-hourly"
+                      value="hourly">Hourly</label></li>
+                <li><label for="work-daily"><input type="radio" name="work-rate" id="work-daily"
+                      value="daily">Daily</label></li>
+                <li><label for="work-weekly"><input type="radio" name="work-rate" id="work-weekly"
+                      value="weekly">Weekly</label></li>
+                <li><label for="work-biweekly"><input type="radio" name="work-rate" id="work-biweekly"
+                      value="biweekly">Bi-Weekly</label></li>
+                <li><label for="work-bimonthly"><input type="radio" name="work-rate" id="work-bimonthly"
+                      value="bimonthly">Bi-Monthly</label></li>
+                <li><label for="work-anually"><input type="radio" name="work-rate" id="work-anually"
+                      value="anually">Anually</label></li>
+                <li><label for="work-contract"><input type="radio" name="work-rate" id="work-contract"
+                      value="contract">Contract</label></li>
+              </ul>
+            </section>
+
+            <section>
+              <!-- FCC Challenge #10 -->
+              <label for="number" id="number-label">
+                <h3>How much do you get paid</h3>
+              </label>
+              <!-- FCC Challenge #7 & #9 & #11-->
+              <input type="number" name="" min="0" max="999999999999" id="number" placeholder="40000">
+            </section>
+
+            <section>
+              <label>
+                <h3>How many people are in your household?</h3>
+              </label>
+              <input type="number" name="" maxlength="2">
+            </section>
+
+            <section>
+              <label>
+                <h3>How much is your gross monthly househole income?</h3>
+              </label>
+              <input type="text" name="" placeholder="$3,000 / mo" max="10">
+            </section>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <h2>Interests & Availability</h2>
+          </legend>
+          <div class="field-container">
+            <section>
+              <label>
+                <h3>What days are you available?</h3>
+              </label>
+              <ul id="available-days">
+                <li><label><input type="checkbox" name="available-days" value="Monday" id="avaiable-Mon">Monday</label>
+                </li>
+                <li><label><input type="checkbox" name="available-days" value="Tuesday"
+                      id="avaiable-Tue">Tuesday</label></li>
+                <li><label><input type="checkbox" name="available-days" value="Wednesday"
+                      id="avaiable-Wed">Wednesday</label></li>
+                <li><label><input type="checkbox" name="available-days" value="Thursday" id="avaiable-Thu">Thursday
+                  </label></li>
+                <li<label><input type="checkbox" name="available-days" value="Friday" id="avaiable-Fri"> Friday </label>
+                  </li>
+              </ul>
+            </section>
+            <section>
+              <label for="available-times">
+                <h3>What times are you available?</h3>
+              </label>
+              <ul id="available-times">
+                <li><label><input type="checkbox" name="available-times" value="Mornings" id="available-morn">Mornings
+                    (8:00AM - 12:00PM)</label></li>
+                <li><label><input type="checkbox" name="available-times" value="Evenings" id="available-eve">Evenings
+                    (4:00PM - 8:00PM)</label></li>
+              </ul>
+            </section>
+
+            <section>
+              <label for="Interest-Why">
+                <h3>Why are you taking English Classes?</h3>
+              </label>
+              <!-- FCC Challenge #15 -->
+              <textarea id="interest" name="interest" placeholder="..."></textarea>
+            </section>
+          </div>
+        </fieldset>
+
+        <!-- FCC Challenge #16 -->
+        <button type="submit" id="submit">SUBMIT</button>
+      </form>
+    </main>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

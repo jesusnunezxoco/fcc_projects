@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(204, 167, 247);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+#container {
+  width: 75vw;
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  font-weight: bold;
+  margin: 1em;
+  text-align: center;
+}
+
+#description {
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+fieldset {
+  margin-bottom: 1.5em;
+}
+
+button {
+  border-radius: 2%;
+  background-color: rgb(249, 243, 93);
+  border: none;
+  font-size: 1.4em;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 2em;
+  box-shadow: 0 6px #d7e053;
+  outline: none;
+  position: relative;
+}
+
+button:hover {
+  box-shadow: 0 3px #d7e053;
+  cursor: pointer;
+  top: 2px;
+}
+
+button:active {
+  box-shadow: none;
+  top: 6px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75em;
+  flex-wrap: wrap;
+}
+
+section label {
+  margin-right: 1em;
+}
+
+legend h2 {
+  margin-bottom: 0.5em;
+}

@@ -2,60 +2,70 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Stick & Ball - Product Landing Page</title>
+        <title>Animal Hospital - Where the Animals Heal You</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!-- NAVBAR -->
         <header id="header">
-            <span><img src="ball_stick.jpg" id="header-img">BALL & STICK</span>
-            <nav id="nav-bar">
+            <a href="#"><span><img src="ball_stick.jpg" id="header-img"></span></a>
+            <nav id="nav-bar">  
                 <ul>
-                    <li class="nav-link"><a href="features-section">Features</a></li>
-                    <li class="nav-link"><a href="howto-section">How To Use</a></li>
-                    <li class="nav-link"><a href="prices-section">Prices</a></li>
+                    <a href="#features-section" class="nav-link"><li>Features</li></a>
+                    <a href="#howto-section" class="nav-link"><li>How to Use</li></a>
+                    <a href="#prices-section" class="nav-link"><li>Prices</li></a>
                 </ul>
             </nav>
         </header>
+
         <main>
+            <!-- WELCOME -->
             <section id="welcome-section">
-                <h2>The Only Entertainment You Will Ever Need</h2>
-                <h3>Want to change your life? Join us:</h3>
-                <form>
-                    <input type="email" placeholder="Enter your email address">
+                <p>Animals that heal</p>
+                <form id="form">
+                    <input id="email" type="email" placeholder="Enter your email address">
                     <button>GET STARTED</button>
                 </form>
             </section>
-
+            <!-- FEATURES -->
             <section id="features-section">
                 <article class="feature-article">
                     <img class="feature-pic" src="ball.jpeg">
                     <div class="feature-text">
-                        <h2>Expert Design</h2>
-                    <p>We had designers, group studies, and machine learning experts to discover the best design that would meet anybody's needs.</p>
+                        <h2>Expert Care</h2>
+                    <p>Your delicate human body is in our paws</p>
                     </div>
                 </article>
                 <article class="feature-article">
                     <img class="feature-pic" src="ball.jpeg">
                     <div class="feature-text">
-                        <h2>Expert Design</h2>
-                    <p>We had designers, group studies, and machine learning experts to discover the best design that would meet anybody's needs.</p>
+                        <h2>Blood Transfusions</h2>
+                    <p>We cleanse your blood of its pesky nutrients</p>
                     </div>
                 </article>
                 <article class="feature-article">
-                    <img class="feature-pic" src="ball.jpeg">
+                    <img class="feature-pic" src="">
                     <div class="feature-text">
-                        <h2>Expert Design</h2>
-                    <p>We had designers, group studies, and machine learning experts to discover the best design that would meet anybody's needs.</p>
+                        <h2>Pain Therapy</h2>
+                    <p>We use pain to therapize you.</p>
                     </div>
                 </article>
             </section>
-        
+        <!-- HOW TO VIDEO -->
             <section id="howto-section">
-                
-            </section>
+                <iframe 
+                width="560" 
+                height="315" 
+                id="video"
+                src="https://www.youtube.com/embed/c5aRlPa5WJw?controls=0" 
+                frameborder="0" 
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 
+             
+            </section>
+            <!-- PRICES -->
             <section id="prices-section">
                 <article class="item-price">
                     <h4>Bamboo Stick and Ball</h4>
